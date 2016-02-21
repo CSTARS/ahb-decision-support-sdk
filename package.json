@@ -1,0 +1,26 @@
+{
+  "name": "ahb-decision-support-sdk",
+  "version": "0.0.1",
+  "description": "SDK for decision support app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "keywords": [
+    "biofuels",
+    "poplar",
+    "ahb",
+    "cstars"
+  ],
+  "author": "Justin Merz <jrmerz@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^1.5.2",
+    "extend": "^3.0.0",
+    "farm-budgets-sdk": "0.0.6",
+    "md5": "^2.0.0",
+    "poplar-3pg-model": "^1.0.8",
+    "superagent": "^1.7.2",
+    "terraformer-arcgis-parser": "^1.0.4"
+  }
+}
