@@ -20,6 +20,7 @@
     "farm-budgets-sdk": "0.0.6",
     "md5": "^2.0.0",
     "poplar-3pg-model": "^1.0.9",
+    "proj4": "^2.3.12",
     "superagent": "^1.7.2",
     "terraformer-arcgis-parser": "^1.0.4"
   }
