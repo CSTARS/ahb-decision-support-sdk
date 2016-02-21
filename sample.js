@@ -1,7 +1,7 @@
 var sdk = require('./lib');
 
 var ll = [40.600445, -122.204414];
-var radius = 3000;
+var radius = 1500;
 
 var t = new Date().getTime();
 
