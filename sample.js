@@ -11,8 +11,13 @@ sdk.datastore.getParcels(ll[0], ll[1], radius, function(err, parcels){
   sdk.datastore.getWeather(function(weather){
     console.log('Retrieving soil...\n');
     sdk.datastore.getSoil(function(soil){
-      sdk.model.growAll();
-      console.log('\nDone. '+sdk.datastore.parcels.length+' parcels. '+(new Date().getTime()-t)+'ms');
+
+
+      console.log('Loading farm budget for poplar...\n');
+      sdk.budget.load(function(){
+        sdk.model.growAll();
+        console.log('\nDone. '+sdk.datastore.parcels.length+' parcels. '+(new Date().getTime()-t)+'ms');
+      });
     });
   });
 });
