@@ -6,7 +6,7 @@ var radius = 60*1000;
 var t = new Date().getTime();
 var rand = 0.3;
 
-console.log('Finding parcels '+ll.join(',')+' @ '+(radius/1000)+'km ...');
+console.log('Finding parcels '+ll.join(',')+' @ '+(radius/1000)+'km radius ...');
 sdk.datastore.getParcels(ll[0], ll[1], radius, function(err, parcels){
   if( err ) {
     console.log(err);

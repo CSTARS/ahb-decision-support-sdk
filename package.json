@@ -23,5 +23,9 @@
     "proj4": "^2.3.12",
     "superagent": "^1.7.2",
     "terraformer-arcgis-parser": "^1.0.4"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^4.0.1"
   }
 }
