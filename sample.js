@@ -1,13 +1,16 @@
 var sdk = require('./lib');
 
 var ll = [40.600445, -122.204414];
-var radius = 5000;
+var radius = 60*1000;
 
 var t = new Date().getTime();
-var rand = 0.5;
+var rand = 0.3;
 
-console.log('Finding parcels...');
+console.log('Finding parcels '+ll.join(',')+' @ '+(radius/1000)+'km ...');
 sdk.datastore.getParcels(ll[0], ll[1], radius, function(err, parcels){
+  if( err ) {
+    console.log(err);
+  }
 
   sdk.datastore.randomizeSelected(rand);
 
