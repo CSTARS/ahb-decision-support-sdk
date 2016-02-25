@@ -37,8 +37,9 @@ describe('Rest API - Crop Type', function() {
   it('get a single geometry crop type', function(next){
     restApi.cropType.get(geo1, function(err, resp, cached){
       assert.equal(err, null);
-      assert.equal(typeof resp.crop, 'string');
-      assert.equal(typeof resp.yield, 'number');
+      assert.equal(typeof resp.crop.name, 'string');
+      assert.equal(typeof resp.crop.yield, 'number');
+      assert.equal(typeof resp.crop.price, 'number');
       assert.equal(cached, false);
       next();
     });

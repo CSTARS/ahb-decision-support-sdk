@@ -27,21 +27,23 @@ describe('Datastore - Integration Test', function() {
     });
   });
 
+  /*
   it('should let you select all parcels', function(){
     SDK.datastore.randomizeSelected(0);
     assert.equal(true, true);
   });
+  */
 
   it('should let you lookup crop types', function(){
     SDK.datastore.getCropTypes(function(){
-      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.cropType, 'string');
-      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.cropYield, 'number');
+      assert.equal(typeof SDK.datastore.parcels[0].properties.ucd.crop.name, 'string');
+      assert.equal(typeof SDK.datastore.parcels[0].properties.ucd.crop.yield, 'number');
     });
   });
 
   it('should let you lookup transportation information', function(){
     SDK.datastore.getTransportation(function(){
-      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.transportation, 'object');
+      assert.equal(typeof SDK.datastore.parcels[0].properties.ucd.transportation, 'object');
     });
   });
 
