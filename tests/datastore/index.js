@@ -29,6 +29,13 @@ describe('Datastore - Integration Test', function() {
 
   it('should let you select all parcels', function(){
     SDK.datastore.randomizeSelected(0);
+    assert.equal(true, true);
+  });
+
+  it('should let you lookup crop types', function(){
+    SDK.datastore.getCropTypes(function(){
+      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.cropType, 'string');
+    });
   });
 
   it('should let you grow the poplar and get a result', function(){
