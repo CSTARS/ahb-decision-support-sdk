@@ -38,6 +38,12 @@ describe('Datastore - Integration Test', function() {
     });
   });
 
+  it('should let you lookup transportation information', function(){
+    SDK.datastore.getTransportation(function(){
+      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.transportation, 'object');
+    });
+  });
+
   it('should let you grow the poplar and get a result', function(){
     SDK.grow(function(err, resp){
       assert.equal(err, null);
