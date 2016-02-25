@@ -35,6 +35,7 @@ describe('Datastore - Integration Test', function() {
   it('should let you lookup crop types', function(){
     SDK.datastore.getCropTypes(function(){
       assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.cropType, 'string');
+      assert.equal(typeof SDK.datastore.selectedParcels[0].properties.ucd.cropYield, 'number');
     });
   });
 

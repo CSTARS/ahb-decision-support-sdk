@@ -38,6 +38,7 @@ describe('Rest API - Crop Type', function() {
     restApi.cropType.get(geo1, function(err, resp, cached){
       assert.equal(err, null);
       assert.equal(typeof resp.crop, 'string');
+      assert.equal(typeof resp.yield, 'number');
       assert.equal(cached, false);
       next();
     });
@@ -46,7 +47,7 @@ describe('Rest API - Crop Type', function() {
   it('get a single geometry crop type, cached', function(next){
     restApi.cropType.get(geo1, function(err, resp, cached){
       assert.equal(err, null);
-      assert.equal(typeof resp, 'string');
+      assert.equal(typeof resp, 'object');
       assert.equal(cached, true);
       next();
     });
