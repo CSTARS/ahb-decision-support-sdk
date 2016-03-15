@@ -4,7 +4,8 @@
   "description": "SDK for decision support app",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "mocha tests",
+    "watch" : "grunt watch"
   },
   "keywords": [
     "biofuels",
