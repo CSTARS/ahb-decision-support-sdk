@@ -27,7 +27,7 @@ sdk.datastore.getParcels(ll[0], ll[1], radius, function(err, parcels){
 
           console.log('Loading farm budget for poplar...');
           sdk.budget.load(function(){
-            sdk.model.growAll(function(){
+            sdk.poplarModel.growAll(function(){
 
               sdk.datastore.selectParcels();
 
