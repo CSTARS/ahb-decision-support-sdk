@@ -19,6 +19,7 @@
     "async": "^1.5.2",
     "extend": "^3.0.0",
     "farm-budgets-sdk": "0.0.6",
+    "lzbase62": "^1.4.6",
     "md5": "^2.1.0",
     "poplar-3pg-model": "^1.0.9",
     "proj4": "^2.3.12",
