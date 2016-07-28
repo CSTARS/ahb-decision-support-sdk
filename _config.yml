@@ -10,7 +10,7 @@ title: AHB Decision Support SDK
 email: jrmerz@ucdavis.edu
 description: >
   Decision Support SDK documentation for the Decision Support App. 
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/ahb-decision-support-sdk" # the subpath of your site, e.g. /blog
 url: "http://willow.bioenergy.casil.ucdavis.edu" # the base hostname & protocol for your site
 github_username:  cstars
 
