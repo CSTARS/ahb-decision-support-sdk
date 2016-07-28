@@ -4,20 +4,25 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <p>
+    Welcome to the AHB Decision Support Tool SDK documentation.
+  </p>
+
+  <p style="margin-bottom: 50px">
+    The main repo for the SDK can be found <a href="https://github.com/CSTARS/ahb-decision-support-sdk">here</a>, 
+    the repo for the app can be found <a href="https://github.com/CSTARS/ahb-decision-support-app">here</a>, 
+    and the current demo app can be found at <a href="http://willow.bioenergy.casil.ucdavis.edu">willow.bioenergy.casil.ucdavis.edu</a>.
+  </p>
+
+  <h1 class="page-heading">Sections</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+    <li>
+      <h2>
+        <a class="post-link" href="docs/raw-data">JavaScript Objects</a>
+      </h2>
+      <span class="post-meta">Raw JSON object structure stored in the SDK's collections</span>
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

@@ -10,9 +10,9 @@ for the parcel.
 The root of this object comes from the Univerity of Washington's ArcGIS Service located
 here [https://conifer.gis.washington.edu/arcgis/rest/services/AHBNW/AHBNW_20151009_parcel_featureAccess/MapServer](https://conifer.gis.washington.edu/arcgis/rest/services/AHBNW/AHBNW_20151009_parcel_featureAccess/MapServer)
 It is then run through the [terraformer-arcgis-parser](https://www.npmjs.com/package/terraformer-arcgis-parser)
-model producing GeoJSON.  The properties for this structure are then paired down, storing
-only what's required to preserve memory.  Additional information added to the parcel is stored
-under the **properties.ucd** namespace. 
+module producing GeoJSON.  The properties for this structure are then paired down, storing
+only what's required to preserve memory.  Additional information added to the parcel via the SDK
+is stored under the **properties.ucd** namespace. 
 
 ## GeoJSON Feature
 
