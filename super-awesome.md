@@ -1,3 +1,8 @@
+---
+layout: page
+title: Budget
+---
+
 ## This is awesome
 
 - a 
